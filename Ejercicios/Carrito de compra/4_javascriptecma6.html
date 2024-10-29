@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EJERCICIO 9 JAVASCRIPT ECMA6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            margin: 20px 0;
+        }
+
+        .precioActualizado {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EJERCICIO 9 JAVASCRIPT ECMA6</h1>
+    <section>
+        <h2>CARRITO COMPRA</h2>
+        <p id="mensaje"></p>
+        <fieldset>
+            <legend>CARRITO</legend>
+            <!-- Contenedor de productos -->
+            <section id="Productos">
+                <!-- Producto 1 -->
+                <p>
+                    <input type="checkbox" id="producto1" name="producto1" value="Camiseta blanca M">
+                    <span class="nombreProducto">Camiseta blanca M <span class="precio">25</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="actualizar" onclick="actualizarProducto(this);">
+                    <span>A pagar: <span class="precioActualizado">25</span>€</span>
+                </p>
+                <hr />
+                <!-- Producto 2 -->
+                <p>
+                    <input type="checkbox" id="producto2" name="producto2" value="Vaqueros negros T38">
+                    <span class="nombreProducto">Vaqueros negros T38 <span class="precio">60</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="actualizar" onclick="actualizarProducto(this);">
+                    <span>A pagar: <span class="precioActualizado">60</span>€</span>
+                </p>
+                <hr />
+                <!-- Producto 3 -->
+                <p>
+                    <input type="checkbox" id="producto3" name="producto3" value="Zapatillas verdes T.36">
+                    <span class="nombreProducto">Zapatillas verdes T.36 <span class="precio">45</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="actualizar" onclick="actualizarProducto(this);">
+                    <span>A pagar: <span class="precioActualizado">45</span>€</span>
+                </p>
+                <hr />
+                <!-- Producto 4 -->
+                <p>
+                    <input type="checkbox" id="producto4" name="producto4" value="Calcetines lunares">
+                    <span class="nombreProducto">Calcetines lunares <span class="precio">6</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="actualizar" onclick="actualizarProducto(this);">
+                    <span>A pagar: <span class="precioActualizado">6</span>€</span>
+                </p>
+                <hr />
+            </section>
+        </fieldset>
+
+        <!-- Botones de acción -->
+        <section>
+            <button id="eliminarSeleccionados" onclick="eliminarSeleccionados();">Eliminar del carrito productos seleccionados</button><br />
+            <p>TOTAL A PAGAR: </p>
+            <p><span id="TotalAPagar">136</span>€</p>
+            <button id="actualizar" onclick="actualizarTotal();">Actualizar Total a Pagar</button>
+        </section>
+        <br /><br />
+        <button id="vaciarCarrito" onclick="vaciarCarrito();">Vaciar carrito</button><br />
+    </section>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

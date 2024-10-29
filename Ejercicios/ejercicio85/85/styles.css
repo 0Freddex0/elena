@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif; /* Tipo de letra general */
+    background-color: #f0f4f8; /* Color de fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura de la ventana */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Color de fondo del contenedor */
+    padding: 30px; /* Mayor espacio de relleno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    color: #333333; /* Color del título */
+    font-size: 28px; /* Tamaño del título */
+    font-family: 'Georgia', serif; /* Tipo de letra del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+#miParrafo {
+    font-size: 20px; /* Tamaño de letra inicial */
+    color: black;    /* Color de letra inicial */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transición suave */
+    line-height: 1.5; /* Espaciado entre líneas */
+    font-family: 'Verdana', sans-serif; /* Tipo de letra del párrafo */
+}
+
+button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados del botón */
+    padding: 10px 20px; /* Espaciado del botón */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de letra del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el botón */
+    margin: 5px; /* Espacio entre botones */
+    font-family: 'Arial', sans-serif; /* Tipo de letra del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>MENSAJERÍA</h1>
+
+<!-- Selector de destinatario -->
+<label for="destinatario">Destinataria/o:</label>
+<select id="destinatario">
+    <option value="">Selecciona quién recibirá noticias tuyas...</option>
+    <option value="mismo">a mi mism@</option>
+    <option value="ti">para ti por ser tú</option>
+    <option value="todos">para todo el mundo!</option>
+</select>
+
+<!-- Campo de texto para el mensaje -->
+<label for="mensaje">Mensaje:</label>
+<textarea id="mensaje" rows="4" cols="50"></textarea>
+
+<!-- Botón para enviar -->
+<button id="enviar">Enviar</button>
+
+<!-- Sección donde se mostrarán los mensajes enviados -->
+<div id="enviados">
+    <h2>LO QUE HAS ENVIADO</h2>
+    <p id="no-mensajes">De momento...nada</p>
+    <ul id="lista-mensajes"></ul>
+</div>
+
+<!-- Botones para eliminar mensajes y simular subida a la nube -->
+<button id="eliminar">Eliminar</button>
+<button id="nube">¡a la nube!</button>
+
+<!-- Enlace al archivo JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

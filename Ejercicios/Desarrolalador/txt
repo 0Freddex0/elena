@@ -1,0 +1,159 @@
+/* Estilos generales */
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Color más oscuro para un contraste elegante */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #7f8c8d; /* Color gris suave */
+}
+
+/* Botón de inicio */
+#startButton {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 30px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s; /* Agregado efecto de transformación */
+}
+
+#startButton:hover {
+    background-color: #45a049; /* Verde oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Contenedor de preguntas */
+#test {
+    display: none; /* Oculta las preguntas inicialmente */
+    background-color: white; /* Fondo blanco para preguntas */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#questionsContainer > div {
+    margin-bottom: 30px; /* Espacio entre cada pregunta */
+    padding: 15px; /* Espacio interior para mayor claridad */
+    border-radius: 5px;
+    background-color: #ecf0f1; /* Color de fondo suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+label {
+    display: block; /* Asegura que las etiquetas de las preguntas estén en una línea separada */
+    margin-bottom: 5px; /* Espacio entre la pregunta y las opciones */
+    font-weight: bold; /* Negrita para las preguntas */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Espacio entre el botón de opción y la etiqueta */
+}
+
+/* Estilos del footer y la tabla */
+footer {
+    margin-top: 30px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    letter-spacing: 2px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+}
+
+td {
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Bordes de la tabla */
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo alternativo para filas */
+}
+
+/* Botones de control */
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 30px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre botones */
+    transition: background-color 0.3s, transform 0.2s; /* Agregado efecto de transformación */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+#controls button:last-child {
+    background-color: #dc3545; /* Rojo */
+}
+
+#controls button:last-child:hover {
+    background-color: #c82333; /* Rojo oscuro */
+}
+
+/* Contenedor de respuestas correctas */
+#correctAnswersContainer {
+    display: none; /* Oculta el contenedor de respuestas correctas inicialmente */
+    margin-top: 20px; /* Margen superior */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#correctAnswersContainer h3 {
+    margin: 0 0 10px; /* Margen para el título */
+}

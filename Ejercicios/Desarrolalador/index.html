@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- El contenido está en español, por lo que el atributo lang está correctamente establecido -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Individual JS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body onload="iniciar()">
+    <header>
+        <h1>Prueba Individual de JavaScript</h1>
+        <h2>¿Me demuestras lo que sabes?</h2>
+    </header>
+    <main>
+        <button id="startButton" onclick="empezar()">Empezar</button>
+        <section id="test" style="display: none;"> <!-- Oculta la sección de preguntas inicialmente -->
+            <h3>Preguntas</h3>
+            <div id="questionsContainer"></div> <!-- Aquí se cargarán las preguntas -->
+        </section>
+    </main>
+    
+    <div id="chronoExample">
+        <div class="values">00:00:00</div>
+        <div>
+            <button class="startButton" onclick="startChrono()">Iniciar</button>
+            <button class="pauseButton" onclick="pauseChrono()">Pausar</button>
+            <button class="stopButton" onclick="stopChrono()">Detener</button>
+            <button class="resetButton" onclick="resetChrono()">Reiniciar</button>
+        </div>
+    </div>
+    
+    <footer>
+        <section id="controls">
+            <button onclick="comprobar()">Comprobar</button>
+            <button onclick="reintentar()">Volver a intentarlo</button>
+            <button onclick="rendirse()">Rendirse</button>
+        </section>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Intento</th>
+                    <th scope="col">Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody">
+                <!-- Los resultados se añadirán aquí dinámicamente -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Mejor resultado</th>
+                    <td colspan="2" id="bestResult"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Contenedor para respuestas correctas -->
+        <div id="correctAnswersContainer">
+            <h3>Respuestas Correctas:</h3>
+            <div id="correctAnswers"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

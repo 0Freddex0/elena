@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzamiento de Dados</title>
+</head>
+<body>
+    <h2>Lanzamiento de Dados</h2>
+    
+    <!-- Inputs para mostrar el valor de cada dado -->
+    <label for="dado1">Valor del Dado 1:</label>
+    <input type="text" id="dado1" readonly><br>
+
+    <label for="dado2">Valor del Dado 2:</label>
+    <input type="text" id="dado2" readonly><br><br>
+
+    <!-- Inputs para mostrar el valor más alto y más bajo -->
+    <label for="valorAlto">Valor más Alto:</label>
+    <input type="text" id="valorAlto" readonly><br>
+
+    <label for="valorBajo">Valor más Bajo:</label>
+    <input type="text" id="valorBajo" readonly><br><br>
+
+    <!-- Botón para lanzar los dados -->
+    <button onclick="lanzarDados()">Lanzar Dados</button>
+
+    <!-- Script JavaScript embebido -->
+    <script>
+        // Función que se ejecuta al hacer clic en el botón para lanzar los dados
+        function lanzarDados() {
+            // Generar valores aleatorios para los dos dados entre 1 y 6
+            var dado1 = Math.floor(Math.random() * 6) + 1;
+            var dado2 = Math.floor(Math.random() * 6) + 1;
+
+            // Mostrar los valores de los dados en los inputs correspondientes
+            document.getElementById('dado1').value = dado1;
+            document.getElementById('dado2').value = dado2;
+
+            // Calcular el valor más alto y más bajo
+            var valorAlto = Math.max(dado1, dado2);
+            var valorBajo = Math.min(dado1, dado2);
+
+            // Mostrar el valor más alto y más bajo en los inputs correspondientes
+            document.getElementById('valorAlto').value = valorAlto;
+            document.getElementById('valorBajo').value = valorBajo;
+        }
+    </script>
+</body>
+</html>

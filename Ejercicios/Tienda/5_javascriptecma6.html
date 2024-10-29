@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>EJERCICIO 10 JAVASCRIPT ECMA6</title>
+    <script src="script.js"></script> <!-- Enlace al archivo de JavaScript externo -->
+</head>
+
+<body onload="iniciar();">
+    <h1>EJERCICIO 10 JAVASCRIPT ECMA6</h1>
+    <h2>TIENDA</h2>
+    <h3>¡Vamos a comprar!</h3>
+
+    <!-- Sección para ingresar el nombre -->
+    <section>
+        <input type="text" id="nombre" placeholder="Escribe aquí tu nombre">
+        <input type="button" value="Entrar" onclick="entrar();">
+    </section>
+
+    <!-- Mensaje de bienvenida -->
+    <p id="mensaje"></p>
+
+    <!-- Sección del escaparate de productos -->
+    <section id="escaparate" style="display: none;"> <!-- Ocultamos esta sección inicialmente -->
+        <fieldset>
+            <legend>ESCAPARATE</legend>
+            <section id="Productos">
+                <p>
+                    <span class="nombreProducto">Camiseta blanca M <span class="precio">25</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="comprar" onclick="comprar(this);">
+                </p>
+                <hr />
+                <p>
+                    <span class="nombreProducto">Vaqueros negros T38 <span class="precio">60</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="comprar" onclick="comprar(this);">
+                </p>
+                <hr />
+                <p>
+                    <span class="nombreProducto">Zapatillas verdes T.36 <span class="precio">45</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="comprar" onclick="comprar(this);">
+                </p>
+                <hr />
+                <p>
+                    <span class="nombreProducto">Calcetines lunares <span class="precio">6</span>€</span>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" step="1" />
+                    <input type="button" value="comprar" onclick="comprar(this);">
+                </p>
+                <hr />
+            </section>
+        </fieldset>
+
+        <!-- Botones para ver o vaciar el carrito -->
+        <section>
+            <button id="verCarrito" onclick="verCarrito();">Ver carrito</button>
+            <button id="vaciarCarrito" onclick="vaciarCarrito();">Vaciar carrito</button><br />
+        </section>
+    </section>
+
+</body>
+
+</html>

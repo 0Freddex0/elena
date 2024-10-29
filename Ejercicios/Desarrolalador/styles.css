@@ -1,0 +1,30 @@
+#controls {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para alinear los botones verticalmente */
+    align-items: flex-start; /* Alinea los botones a la izquierda */
+    margin-bottom: 2px; /* Espacio inferior si es necesario */
+}
+
+#controls button {
+    margin-bottom: 1px; /* Espacio entre los botones */
+}
+
+#questionsContainer > div {
+    margin-bottom: 3px; /* Aumenta el margen inferior para crear más espacio entre las preguntas */
+    padding: 4px; /* Espacio interior para mayor claridad */
+
+}
+
+/* Contenedor de respuestas correctas */
+#correctAnswersContainer {
+    display: none; /* Oculta el contenedor de respuestas correctas inicialmente */
+    margin-top: 20px; /* Margen superior */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#correctAnswersContainer h3 {
+    margin: 0 0 10px; /* Margen para el título */
+}

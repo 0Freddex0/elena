@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo B</title>
+    <style>
+        ul { list-style-type: none; }
+        img { width: 5%; display: none; }   
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Modelo B Desarrollo en Entorno Cliente</h1>
+            <h2>Tiramos los dados</h2>
+            <p>¿Acertarás el número sacado al azar al lanzar el dado?</p>
+            <p><strong>Instrucciones:</strong><br/>
+            1-Escribe en la caja de texto un número<br/>
+            2-Pulsa el botón de "lanzar dado"<br/>
+            3-Se mostrará una imagen con la cara del dado obtenida<br/>
+            4-Si el número que sale coincide con el que has metido tú en la caja de texto habrás ganado.<br/>
+            Tienes 6 intentos, ¡suerte!</p>
+        </header>
+        <main>
+            <ul id="dado">
+                <li><img src="images\1.png" alt="Cara 1" /></li>
+                <li><img src="images\2.png" alt="Cara 2" /></li>
+                <li><img src="images\3.png" alt="Cara 3" /></li>
+                <li><img src="images\4.png" alt="Cara 4" /></li>
+                <li><img src="images\5.png" alt="Cara 5" /></li>
+                <li><img src="images\6.png" alt="Cara 6" /></li>
+            </ul>
+            <p>
+                <input type="text" id="numeroInput" placeholder="Inserta aquí tu número" />
+            </p>
+            <input type="button" id="lanzarDado" value="Lanzar el dado" />
+        </main>
+        <footer id="footer">
+            <p>Intentos: <span id="intentos">0</span></p>
+            <input type="button" id="reiniciar" value="¿Empezamos de nuevo?" style="display: none;" />
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
